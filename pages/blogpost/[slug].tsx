@@ -6,7 +6,9 @@ type Props = {};
 const slug = (props: Props) => {
 	const router = useRouter();
   const {slug}=router.query
-	return <div>{slug}</div>;
+	return <>
+		<h1>this is {slug}</h1>
+	</>;
 };
 
 export default slug;
