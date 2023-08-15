@@ -19,7 +19,7 @@ export default async function handler(
 
     for (let index = 0; index < getdata.length; index++) {
         const element = getdata[index];
-        console.log(element)
+        // console.log(element)
         myfile=await fs.promises.readFile(('blogdata/'+element), 'utf-8'  )
         allblogs.push(JSON.parse(myfile))
         

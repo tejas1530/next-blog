@@ -27,7 +27,7 @@ export default function handler(
           try {
             const parsedData: types[] = JSON.parse(data);
             res.status(200).json(parsedData);
-            console.log(req.query.slug)
+            // console.log(req.query.slug)
           } catch (parseError) {
             console.error("Error parsing JSON:", parseError);
             res.status(500).json({ error: "Error parsing data" });
