@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-type Props = {}
+type Props = {
+  
+}
 
 interface FormData {
   name: string;
